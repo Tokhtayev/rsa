@@ -17,6 +17,15 @@ def local_css(file_name):
 
 local_css("style.css")
 
+# --- CUSTOM SIDEBAR BRANDING ---
+st.sidebar.markdown(f"""
+    <div style="text-align:center; padding: 20px 0;">
+        <h1 style="color:var(--accent-blue); font-size: 2.2rem; margin-bottom:0;">CRYPTOGRAM</h1>
+        <p style="color:var(--accent-purple); font-size: 0.8rem; letter-spacing: 3px; font-weight:bold; margin-top:0;">ADVANCED LAB</p>
+        <hr style="border-top: 1px solid var(--border-color); width: 80%; margin: 20px auto;">
+    </div>
+""", unsafe_allow_html=True)
+
 # --- DASHBOARD ---
 st.markdown("<h1>Cryptographic <span class='neon-text'>Lab</span></h1>", unsafe_allow_html=True)
 
