@@ -116,12 +116,50 @@ h1 {
     margin-bottom: 2rem !important;
 }
 
-/* Code Display */
-.math-box {
+/* Theory Panel (Right side) */
+.theory-panel {
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 1px solid var(--border-color);
+    padding: 2.5rem;
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+}
+
+.theory-title {
+    color: var(--accent-purple);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.formula-box {
+    background: rgba(188, 19, 254, 0.05);
+    border: 1px dashed var(--accent-purple);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px 0;
     font-family: 'JetBrains Mono', monospace;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 8px;
-    border-left: 3px solid var(--accent-purple);
-    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+}
+
+.theory-text {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Sidebar Logo/Header */
+[data-testid="stSidebarNav"] {
+    background-color: var(--bg-color);
+    padding-top: 2rem;
+}
+
+[data-testid="stSidebar"] {
+    background-color: var(--bg-color);
+    border-right: 1px solid var(--border-color);
 }
